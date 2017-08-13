@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Jonathan Alvarado</title>
+    <title>Projects by Jonathan Alvarado</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -20,7 +20,7 @@
     <div id="wrapper">
 
         <!-- Header -->
-        <header id="header" class="alt">
+        <header id="header">
             <a href="index.html" class="logo"><strong>Portfolio</strong> <span>by Jonathan Alvarado</span></a>
             <nav>
                 <a href="#menu">Menu</a>
@@ -37,44 +37,41 @@
             </ul>
         </nav>
 
-        <!-- Banner -->
-        <section id="banner" class="major">
-            <div class="inner container">
-                <header class="major">
-                        <h1>Hi, my name is Jonathan</h1><a target="_blank" href="https://www.linkedin.com/in/jonathan-alvarado/" class="icon alt fa-linkedin"></a>
-                        <a target="_blank" href="https://github.com/Alvaradojonathan" class="icon alt fa-github"></a>
-                        <a class="icon alt fa-envelope" target="_blank" href="mailto:J.Alvrubio@gmail.com"></a>
-                </header>
-                <div class="content">
-                    <p>I have included projects that I have worked on and the technologies I used throughout the process. Let's begin with a short introduction.</p>
-                    <br />
-                    <p style="float:right"><a href="#contact" class="button" id="contactButton">Contact</a></p>
-                    <p style="float:left"><a id="aboutButton" href="#main" class="button">About Me</a></p>
-                    <p style="text-align:center"><a href="projects.html" class="button">View projects</a></p>
-                </div>
-            </div>
-        </section>
-
         <!-- Main -->
-        <div id="main">
+        <div id="main" class="alt">
+
+            <!-- One -->
             <section id="one">
                 <div class="inner">
-                    <header class="major">
-                        <h1>About Me</h1>
-                    </header>
-                    <img style="width:400px; margin-right:30px; float:right" src="images/Me.jpg" />
-                    <p>I came to the US from Puerto Rico. As a high school student I participated in my schools robotics team and we had our first competition that year, we placed 14th overall. Ever since then I have been interested in coding, we used C++ to program our robot. After graduation, I started exploring other career options with an ocassional programming class here and there.</p>
-                    <p>I had been debating on whether to take what I considered a fleeting hobby seriously and decided on pursuing software development as my career. As I searched for options to help me develop the necessary skills I came across We Can Code IT, a 12-week intensive coding bootcamp. I understood that I would have to fill in gaps in knowledge pertaining to programming and decided that immersing myself in a bootcamp was the right thing for me.</p>
-                    <p>I have managed to attend this bootcamp while continuing my coursework at Tri-C for my AAS in Computer Networking. I graduate in the Spring of 2018. Having finished the Summer semester before the second half of the bootcamp is incredible. I have been able to dedicate much needed time to develop the necessary background to enter this field and have completed several projects to showcase my skills. </p>
-                    <ul class="actions">
-                        <li><a href="projects.html" class="button">View projects</a></li>
-                        <li style="float:right;"><a href="#contact" id="contactButton" class="button">Contact</a></li>
-                    </ul>
+                    <div class="row carousel">
+                        <div class="4u 12u$(medium)">
+                            <h3><a href="https://github.com/Alvaradojonathan/Lucky-Numbers">Lucky Numbers</a></h3>
+                            <img style="width:80%;" src="images/lucky.png" alt="" />
+                            <p>A console application that will be a guessing game similar to the lottery. The user will choose a range of numbers and then try to guess all 6 of the numbers that will be randomly generated within the range. The user will win a portion of the imaginary jackpot based on the number of numbers guessed correctly.</p>
+                            <h5>Skills:</h5>
+                            <p>C#</p>
+                            <hr />
+                        </div>
+                        
+                        <div class="4u 12u$(medium)">
+                            <h3><a href="https://github.com/Alvaradojonathan/Bank" target="_blank">Bank Account</a></h3>
+                            <img style="width:50%;" src="images/bank.png" />
+                            <p>A console application to manage a client’s bank account. For now, the application only has one client that is hard-coded into the system.</p>
+                            <h5>Skills:</h5>
+                            <p>C#<br />Object Oriented Programming</p>
+                            <hr />
+                        </div>
+                        
+                        <div class="4u 12u$(medium)">
+                                <h3><a href="https://github.com/Alvaradojonathan/OnlineWardrobe" target="_blank">Wardrobe</a></h3>
+                                <img style="width:50%;" src="images/wview.png" alt="" />
+                                <p>The objective for this project was to create a web application for managing the contents of a wardrobe. I designed this using a database first approach using the MVC approach. I was able to filter through the different types of clothes by creating views within the wardrobe controller that filter out results from the database based on the results it grabbed from clothing type field.</p>
+                                <h5>Skills:</h5><p>MVC<br />SQL Database Design<br />CSS<br />HTML<br />C#</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-
-        <!-- Contact -->
 
         <section id="contact">
             <div class="inner">
@@ -85,7 +82,7 @@
                 </section>
                 <section class="split">
                     <section>
-                        <a id="aboutButton" href="#main" class="button">About Me</a>
+                        <a id="aboutButton" href="index.html" class="button">About Me</a>
                     </section>
                     <section>
                         <div>
@@ -104,6 +101,7 @@
             </div>
         </section>
         <p style="text-align:center;"><a href="#">back to top</a></p>
+
         <!-- Footer -->
         <footer id="footer">
             <div class="inner">
@@ -113,6 +111,7 @@
                 </ul>
             </div>
         </footer>
+
     </div>
 
     <!-- Scripts -->
@@ -123,6 +122,5 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
-
 </body>
 </html>
